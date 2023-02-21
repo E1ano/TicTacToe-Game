@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title>TicTacToe Game</title>
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="adaptive.css">
+</head>
+<body>
+
+<div class="start-window__wrapper">
+  <div class="container">
+    <div class="start-window__inner">
+      <img src="images/logo.svg" alt="logo" class="start-window__logo">
+
+      <div class="pick-player__menu">
+        <div class="pick-player__title">PICK PLAYER 1’S MARK</div>
+        <div class="pick-player__choose choose">
+            <div class="choose__btn choose__btn--x active-x"></div>
+            <div class="choose__btn choose__btn--o"></div>
+        </div>
+        <div class="pick-player__subtitle">REMEMBER : X GOES FIRST</div>
+      </div>
+
+      <div class="start-window__btn start-window__btn--cpu">NEW GAME (VS CPU)</div>
+      <div class="start-window__btn start-window__btn--player">NEW GAME  (VS PLAYER)</div>
+    </div>
+  </div>
+</div>
+
+<div class="game__wrapper">
+  <div class="container">
+    <div class="game__inner">
+
+      <div class="game__menu">
+        <img src="images/logo.svg" alt="logo" class="game__logo">
+        <div class="game__current-player current-player">
+          <img src="images/icon-x-gray.svg" alt="#"  class="current-player__img">
+          <div class="current-player__text">turn</div>
+        </div>
+        <div class="game__turn-btn"></div>
+        <div class="game__exit-btn"></div>
+      </div>
+
+      <div class="game__field field">
+        <div id = "0" class="field__item"></div>
+        <div id = "1" class="field__item"></div>
+        <div id = "2" class="field__item"></div>
+        <div id = "3" class="field__item"></div>
+        <div id = "4" class="field__item"></div>
+        <div id = "5" class="field__item"></div>
+        <div id = "6" class="field__item"></div>
+        <div id = "7" class="field__item"></div>
+        <div id = "8" class="field__item"></div>
+      </div>
+
+      <div class="game__statistics">
+        <div class="statistics__item statistics__item--x">
+          <div class="statistics__title">player(x)</div>
+          <div class="statistics__score score--x">0</div>
+        </div>
+        <div class="statistics__item statistics__item--ties">
+          <div class="statistics__title">ties</div>
+          <div class="statistics__score score--ties">0</div>
+        </div>
+        <div class="statistics__item statistics__item--o">
+          <div class="statistics__title">player(o)</div>
+          <div class="statistics__score score--o">0</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="result__wrapper">
+  <div class="result__inner">
+    <div class="result__title"><img src="images/icon-x.svg" alt="#" class="result__side">
+      <div class="result__text">takes the round</div>
+    </div>
+
+    <div class="result__btns">
+      <div class="quit__btn">quit</div>
+      <div class="next-round__btn">next round</div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
