@@ -146,6 +146,7 @@ resultWindow.addEventListener('click', (e) => {
     if (e.target.classList.contains('cancel')) {
         resultWindow.style.display = 'none';
         gameWindow.classList.remove('non-active');
+        clearTurnBtns(cancelBtn, restartBtn);
     }
 
     if (e.target.classList.contains('restart') && e.target.textContent === 'YES, RESTART') {
@@ -158,11 +159,13 @@ resultWindow.addEventListener('click', (e) => {
             swapCurrentPlayer();
             addHover();
         }
+        clearTurnBtns(cancelBtn, restartBtn);
     } else if (e.target.classList.contains('restart') && e.target.textContent === 'YES, QUIT') {
         goStartPage();
+        clearTurnBtns(cancelBtn, restartBtn);
     }
 
-    clearTurnBtns(cancelBtn, restartBtn);
+   
 });
 
 chooseBtnX.addEventListener('click', () => {

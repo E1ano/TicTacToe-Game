@@ -61,6 +61,7 @@
     .field__item {
         width: 105px;
         height: 105px;
+        background-size: 50px !important;
     }
 
     .game__statistics {
